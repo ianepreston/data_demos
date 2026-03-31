@@ -1,0 +1,26 @@
+[project]
+name = "data-demos"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "ianepreston", email = "17241371+ianepreston@users.noreply.github.com" }
+]
+requires-python = ">=3.11"
+dependencies = []
+
+[build-system]
+requires = ["uv_build>=0.10.4,<0.11.0"]
+build-backend = "uv_build"
+
+[[tool.uv.index]]
+url = "https://pypi-proxy.dev.databricks.com/simple"
+default = true
+
+[dependency-groups]
+dev = [
+    "prek>=0.3.8",
+    "pyspark>=4.1.1",
+    "pytest>=9.0.2",
+    "ruff>=0.15.7",
+]

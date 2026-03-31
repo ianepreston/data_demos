@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=./bundle-schema.json
+---
+bundle:
+  name: data_demos
+include:
+  - resources/*.yaml
+  - resources/*.yml
+variables:
+  catalog_name:
+    default: ian_preston
+targets:
+  fe-east:
+    default: true
+    mode: development
+    workspace:
+      profile: field-eng-east
+    variables:
+      catalog_name: ian_preston
