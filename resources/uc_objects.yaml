@@ -1,0 +1,18 @@
+---
+# yaml-language-server: $schema=../bundle-schema.json
+resources:
+  catalogs:
+    base:
+      comment: "Managed by DABs"
+      name: ${var.catalog_name}
+  schemas:
+    calgary_transit:
+      catalog_name: ${resources.catalogs.base.name}
+      name: calgary_transit
+      comment: "Information about transit in Calgary"
+  volumes:
+    calgary_transit_ingest:
+      catalog_name: ${resources.catalogs.base.name}
+      schema_name: ${resources.schemas.calgary_transit.name}
+      name: ingest
+      volume_type: "MANAGED"
