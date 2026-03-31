@@ -7,7 +7,10 @@ authors = [
     { name = "ianepreston", email = "17241371+ianepreston@users.noreply.github.com" }
 ]
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "gtfs-realtime-bindings>=2.0.0",
+    "requests>=2.32.5",
+]
 
 [build-system]
 requires = ["uv_build>=0.10.4,<0.11.0"]
@@ -19,6 +22,7 @@ default = true
 
 [dependency-groups]
 dev = [
+    "ipython>=9.10.0",
     "prek>=0.3.8",
     "pyspark>=4.1.1",
     "pytest>=9.0.2",
