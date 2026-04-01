@@ -1,0 +1,1155 @@
+{
+  "header": {
+    "gtfsRealtimeVersion": "0.1",
+    "incrementality": "FULL_DATASET",
+    "timestamp": "1775054586"
+  },
+  "entity": [
+    {
+      "id": "189022",
+      "alert": {
+        "activePeriod": [
+          {
+            "start": "1774958400",
+            "end": "1775462400"
+          }
+        ],
+        "informedEntity": [
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "201"
+          }
+        ],
+        "headerText": {
+          "translation": [
+            {
+              "text": "",
+              "language": "en"
+            }
+          ]
+        },
+        "descriptionText": {
+          "translation": [
+            {
+              "text": "<p><b>April 3-5: Lions Park to Dalhousie closure</b>\n<p>The Red Line will be closed between Lions Park and Dalhousie stations starting Friday, April 3 until the very early hours of Monday, April 6. \n<p>Red Line trains coming from the south and downtown will terminate at Lions Park Station. Trains heading southbound from Tuscany will terminate at Dalhousie Station. For travel to all stations between Lions Park and Dalhousie, we\u00bfll have shuttle buses replacing train service. \n<p>Full CTrain service will be back up and running again by start of service on Monday, April 6.\n<p>For more information please visit: calgarytransit.com/ctrain-service",
+              "language": "en"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "188747",
+      "alert": {
+        "activePeriod": [
+          {
+            "start": "1774962000",
+            "end": "1779843600"
+          }
+        ],
+        "informedEntity": [
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "1"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "101"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "307"
+          }
+        ],
+        "headerText": {
+          "translation": [
+            {
+              "text": "",
+              "language": "en"
+            }
+          ]
+        },
+        "descriptionText": {
+          "translation": [
+            {
+              "text": "<div data-effect=\"STOP_MOVED\"></div>\n<p>Starting at 7 a.m. on Tuesday, March 31, and continuing until 7 p.m. on Tuesday, May 26, northbound 12 Street S.E. will be closed between 9 Avenue S.E. &amp; 11 Avenue S.E. with two-way traffic travelling in the southbound lanes. Routes 1, 101 &amp; MAX Purple will have a stop closure.\n\n<p>The following stop will be temporarily closed:\n<ul>\n  <li>EB 9 AV @ 12 ST SE (#9805)\n</ul>\n<p>Please use the following temporary stops in lieu of the closed stops:\n<ul>\n  <li>EB 9 AV SE @ 12 ST SE (near side)\n</ul>",
+              "language": "en"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "189071",
+      "alert": {
+        "activePeriod": [
+          {
+            "start": "1775051100",
+            "end": "1775368740"
+          }
+        ],
+        "informedEntity": [
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "201"
+          }
+        ],
+        "headerText": {
+          "translation": [
+            {
+              "text": "",
+              "language": "en"
+            }
+          ]
+        },
+        "descriptionText": {
+          "translation": [
+            {
+              "text": "<div data-effect=\"ACCESSIBILITY_ISSUE\"></div>The elevator at University Station is temporarily out of service.",
+              "language": "en"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "188720",
+      "alert": {
+        "activePeriod": [
+          {
+            "start": "1774706400",
+            "end": "1778454000"
+          }
+        ],
+        "informedEntity": [
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "733",
+            "stopId": "4690"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "732",
+            "stopId": "4690"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "699",
+            "stopId": "4690"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "13",
+            "stopId": "4690"
+          }
+        ],
+        "headerText": {
+          "translation": [
+            {
+              "text": "",
+              "language": "en"
+            }
+          ]
+        },
+        "descriptionText": {
+          "translation": [
+            {
+              "text": "<div data-effect=\"STOP_MOVED\"></div>\n<p>Starting Saturday, March 28 at 8 a.m. through Sunday, May 10 at 5 p.m., eastbound lane closures will be in effect on 50 Avenue between 21 - 22 Street S.W. for construction. Route 13, 699, 732, and 733 will be affected.</p>\n<p>The following stop will be temporarily closed:</p>\n<ul>\n  <li>EB 50 AV SW @ 21A ST SW - Stop: #4690 - Routes 13, 699, 732 &amp; 733</li>\n</ul>\n<p>Please use the following stop in lieu of the closed stop:</p>\n<ul>\n  <li>EB 50 AV SW @ 21 ST SW - near  side</li>\n</ul>",
+              "language": "en"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "188240",
+      "alert": {
+        "activePeriod": [
+          {
+            "start": "1774141200",
+            "end": "1782514800"
+          }
+        ],
+        "informedEntity": [
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "6"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "101"
+          }
+        ],
+        "headerText": {
+          "translation": [
+            {
+              "text": "",
+              "language": "en"
+            }
+          ]
+        },
+        "descriptionText": {
+          "translation": [
+            {
+              "text": "<div data-effect=\"STOP_MOVED\"></div>\n<p>Starting Wednesday, January 7 at 9 a.m. through  Friday, June 26 at 5 p.m., northbound 1 Street S.W. will be closed between 6 - 7 Avenue S.W. to accommodate utility work. Routes 6 &amp; 101 will have a stop closure.</p>\n\n<p>The following stop will be temporarily closed:</p>\n<ul>\n  <li>NB 1 ST SW @ 7 AV SW (#5303) - Routes: 6 & 101\n</ul>\n<p>Please use the following stop in lieu of the closed stop:</p>\n<ul>\n<li>NB 1 ST SW @ 6 AV SW (#5300) - Route 101\n<li>WB 6 AV SW @ 2 ST SW (#5118) - Route: 6\n</ul>",
+              "language": "en"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "188239",
+      "alert": {
+        "activePeriod": [
+          {
+            "start": "1774141200",
+            "end": "1782514800"
+          }
+        ],
+        "informedEntity": [
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "24"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "90"
+          }
+        ],
+        "headerText": {
+          "translation": [
+            {
+              "text": "",
+              "language": "en"
+            }
+          ]
+        },
+        "descriptionText": {
+          "translation": [
+            {
+              "text": "<div data-effect=\"STOP_MOVED\"></div>\n<p>Starting Wednesday, January 7 at 9 a.m. through  Friday, June 26 at 5 p.m., northbound 1 Street S.W. will be closed between 6 - 7 Avenue S.W. to accommodate utility work. Routes 24 &amp; 90 will have a stop closure.</p>\n\n<p>The following stop will be temporarily closed:</p>\n<ul>\n  <li>NB 1 ST SW @ 8 AV SW (far side) (#5833)\n</ul>\n<p>Please use the following stop in lieu of the closed stop:</p>\n<ul>\n  <li>NB 1 ST SW @ 6 AV SW (#5300)\n</ul>",
+              "language": "en"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "185744",
+      "alert": {
+        "activePeriod": [
+          {
+            "start": "1770642000",
+            "end": "1794758400"
+          }
+        ],
+        "informedEntity": [
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "151"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "131"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "1"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "302"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "307"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "101"
+          }
+        ],
+        "headerText": {
+          "translation": [
+            {
+              "text": "",
+              "language": "en"
+            }
+          ]
+        },
+        "descriptionText": {
+          "translation": [
+            {
+              "text": "<div data-effect=\"STOP_MOVED\"></div>\n<p>Starting Monday, February 9 at 9 a.m. through Sunday, November 15 at 9 a.m., there will be lane closures on 9 Avenue S.E. between 5 Street and 6 Street S.E. for 6 ST S.E. underpass construction. Routes 1, 101, 131, 151, 302 and MAX Purple will have stop closures.</p>\n<p>The following stops will be temporarily closed:</p>\n<ul>\n  <li>WB 9 AV S.E. @ The Confluence (#5079) - Routes 1 and 101</li>\n  <li>WB 9 AV S.E. @ The Confluence (#9821) - Routes 302 and MAX Purple</li>\n  <li>WB 9 AV S.E. @ 6 ST S.E. (#3389) - Routes 1 and 131</li>\n  <li>EB 9 AV S.E. @ 6 ST S.E. (#3886) - Routes 1, 131, 302 and MAX Purple</li>\n  <li>EB 9 AV S.E. @ 6 ST S.E. (#3917) - Route 151</li>\n</ul>\n<p>Please use the following stops in lieu of the closed stops:</p>\n<ul>\n  <li>WB 9 AV S.E. @ 100m east of closed Stop #5079 - Routes 1 and 101</li>\n  <li>WB 9 AV S.E. @ 100m east of closed Stop #9821 - Routes 302 and MAX Purple</li>\n  <li>WB 9 AV S.E. @ 5 ST S.E. - Routes 1 and 131</li>\n  <li>EB 9 AV S.E. @ Olympic WY S.E. - Routes 1, 131, 151, 302 and MAX Purple</li>\n</ul>",
+              "language": "en"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "187185",
+      "alert": {
+        "activePeriod": [
+          {
+            "start": "1772456400",
+            "end": "1775250000"
+          }
+        ],
+        "informedEntity": [
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "42",
+            "stopId": "4361"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "42",
+            "stopId": "4360"
+          }
+        ],
+        "headerText": {
+          "translation": [
+            {
+              "text": "",
+              "language": "en"
+            }
+          ]
+        },
+        "descriptionText": {
+          "translation": [
+            {
+              "text": "<div data-effect=\"DETOUR\"></div>\n<p>Starting Monday, March 2 at 9 a.m. through Friday, April 3 at 3 p.m., Memorial Drive E. @ Abbeydale Drive N.E. and West Memorial Drive N.E. will be closed for utility work. Route 42 will be detoured.</p>\n<p>Route 42 will travel:</p>\n<ul>\n  <li>From South on Abbeydale Drive N.E.</li>\n  <li>West on 4 Avenue N.E.</li>\n  <li>South on 68 Street N.E.</li>\n  <li>West on Memorial Drive E., to regular route</li>\n</ul>\n<p>The following stops will be temporarily closed:</p>\n<ul>\n  <li>SB Abbeydale DR @ 4 AV N.E. (#4360)</li>\n  <li>WB Memorial DR @ Abbeydale CR N.E. (#4361)</li>\n</ul>\n<p>Please use the following stops in lieu of the closed stops:</p>\n<ul>\n  <li>WB 4 AV N.E. @ Abbeydale DR N.E. - detour stop</li>\n  <li>WB Memorial DR @ 68 ST N.E. (#4362)</li>\n</ul>",
+              "language": "en"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "188015",
+      "alert": {
+        "activePeriod": [
+          {
+            "start": "1773327600",
+            "end": "1775195940"
+          }
+        ],
+        "informedEntity": [
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "53",
+            "stopId": "7488"
+          }
+        ],
+        "headerText": {
+          "translation": [
+            {
+              "text": "",
+              "language": "en"
+            }
+          ]
+        },
+        "descriptionText": {
+          "translation": [
+            {
+              "text": "<div data-effect=\"STOP_MOVED\"></div>\n<p>Starting Thursday, March 12 through Thursday, April 2, lane closures will be in effect on 83 Street @ 33 Avenue N.W. Routes 53 and 721 will be affected.</p>\n<p>The following stop will be temporarily closed:</p>\n<ul>\n  <li>SB  83 ST NW @ 33 AV NW (#7488) - Route 53</li>\n</ul>\n<p>Please use the following stop:</p>\n\n<ul>\n  <li>SB  83 ST NW @ 34 AV NW - near side</li>\n</ul>\n<p>Route 53 and 721 may experience delays.</p>",
+              "language": "en"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "188508",
+      "alert": {
+        "activePeriod": [
+          {
+            "start": "1774440000",
+            "end": "1775077200"
+          }
+        ],
+        "informedEntity": [
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "148",
+            "stopId": "8208"
+          }
+        ],
+        "headerText": {
+          "translation": [
+            {
+              "text": "",
+              "language": "en"
+            }
+          ]
+        },
+        "descriptionText": {
+          "translation": [
+            {
+              "text": "<div data-effect=\"DETOUR\"></div>\n<p>Starting on Wednesday, March 25, and continuing weekdays from 9 a.m. to 3 p.m. and weekends from 7 a.m. to 7 p.m. until Wednesday, April 1, there will be a closure on southbound 44 Street S.E. at 61 Avenue S.E. to accommodate utility work. Route 148 will be detoured.\n<p>Westbound buses will travel:\n<ul>\n  <li>West on 61 Avenue S.E.\n  <li>South on 40 Street S.E.\n  <li>East on 64 Avenue S.E.\n  <li>South on 44 Street S.E., to regular route\n</ul>\n<p>The following stop will be temporarily closed:\n<ul>\n  <li>SB 44 ST SE @ 61 AV SE (#8208)\n</ul>\n\n<p>Please use the following detour stop in lieu of the closed stop:\n<ul>\n  <li>WB 61 AV SE @ 44 ST SE (far side)\n</ul>",
+              "language": "en"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "188446",
+      "alert": {
+        "activePeriod": [
+          {
+            "start": "1774278000",
+            "end": "1775682000"
+          }
+        ],
+        "informedEntity": [
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "3"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "17"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "15"
+          }
+        ],
+        "headerText": {
+          "translation": [
+            {
+              "text": "",
+              "language": "en"
+            }
+          ]
+        },
+        "descriptionText": {
+          "translation": [
+            {
+              "text": "<div data-effect=\"DETOUR\"></div>\n<p>Starting at 9 a.m. on Monday, March 23, and continuing until 3 p.m. on Wednesday, April 8, there will be a full closure on 25 Avenue S.W. at 4 Street S.W. to accommodate construction work. Route 17 will be detoured, and routes 3, 15 &amp; 17 will have stop closures.\n<p>Route 17 inbound buses will travel:<ul>\n  <li>West on 25 Avenue S.W.\n  <li>South on 2 Street S.W.\n  <li>West on 26 Avenue S.W.\n  <li>North on 4 Street S.W., to regular route</ul>\n<p>Route 17 outbound buses will travel:<ul>\n  <li>South on 4 Street S.W.\n  <li>East on 26 Avenue S.W.\n  <li>North on 2 Street S.W.\n  <li>East on 25 Avenue S.W., to regular route</ul>\n<p>The following stops will be temporarily closed:\n<ul>\n  <li>Inbound: Routes 3, 15, &amp; 17:<ul>\n  <li>NB 4 ST SW @ 25 AV SW (#5217)\n</ul>\n<li>Outbound: Route 17: <ul>\n<li>EB 25 AV SW @ 4 ST SW (#5594)\n</ul>\n</ul>\n<p>Please use one of the following detour stops in lieu of the closed stops:\n<ul>\n  <li>Inbound: Routes 3, 15 &amp; 17:<ul>\n  <li>NB 4 ST SW @ 24 AV SW (near side)\n</ul>\n  <li>Outbound: Route 17:<ul>\n  <li>EB 26 AV SW @ 4 ST SW (far side)\n</ul>\n</ul>",
+              "language": "en"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "188421",
+      "alert": {
+        "activePeriod": [
+          {
+            "start": "1774263600",
+            "end": "1780207140"
+          }
+        ],
+        "informedEntity": [
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "135",
+            "stopId": "5901"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "58",
+            "stopId": "5901"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "67",
+            "stopId": "5901"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "87",
+            "stopId": "5901"
+          }
+        ],
+        "headerText": {
+          "translation": [
+            {
+              "text": "",
+              "language": "en"
+            }
+          ]
+        },
+        "descriptionText": {
+          "translation": [
+            {
+              "text": "<div data-effect=\"STOP_MOVED\"></div>\n<p>Starting Monday, March 23 through Saturday, May 30, closures will be in effect on Memorial Drive between 36 Street - Marlborough Way N.E. Routes 58, 67, 87 and 135 are affected.</p>\n<p>The following stop will be temporarily closed:</p>\n<ul>\n  <li>WB Memorial Dr @ Marlborough WY NE (#5901) - Routes 58, 67, 87 and 135</li>\n</ul>\n<p>Please use the following stops in lieu of the closed stop:</p>\n<ul>\n  <li>SB Marlborough WY @ S. of Maryvale DR NE (#9480) - Routes 87 and 135</li>\n     <li>NB 36 ST E @ Memorial DR E (#7770) - Routes 58 and 67</li>\n</ul>",
+              "language": "en"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "188742",
+      "alert": {
+        "activePeriod": [
+          {
+            "start": "1774699200",
+            "end": "1779843600"
+          }
+        ],
+        "informedEntity": [
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "302",
+            "stopId": "9820"
+          }
+        ],
+        "headerText": {
+          "translation": [
+            {
+              "text": "",
+              "language": "en"
+            }
+          ]
+        },
+        "descriptionText": {
+          "translation": [
+            {
+              "text": "<div data-effect=\"DETOUR\"></div>\n<p>Starting at 7 a.m. on Saturday, March 28, and continuing until 7 p.m. on Tuesday, May 26, there will be lane closures in the area of 9 Avenue S.E. and 12 Street S.E. to accommodate utility work. Route 302 will be detoured.\n<p>Inbound buses will travel:\n<ul>\n  <li>North on 12 Street S.E.\n  <li>West on 11 Avenue S.E.\n  <li>North on 11 Street S.E.\n  <li>West on 9 Avenue S.E., to regular route\n</ul>\n<p>Outbound buses will travel:\n<ul>\n  <li>East on 9 Avenue S.E.\n  <li>South on 11 Street S.E.\n  <li>East on 11 Avenue S.E.\n  <li>South on 12 Street S.E., to regular route\n</ul>\n<p>The following stop will be temporarily closed:\n<ul>\n  <li>WB 9 AV @ 12 ST SE (#9820) \n</ul>\n<p>Please use the following detour stop in lieu of the closed stops:\n<ul>\n  <li>WB 9 AV @ 11 ST SE (far side)\n</ul>",
+              "language": "en"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "188461",
+      "alert": {
+        "activePeriod": [
+          {
+            "start": "1774447200",
+            "end": "1775077200"
+          }
+        ],
+        "informedEntity": [
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "40"
+          }
+        ],
+        "headerText": {
+          "translation": [
+            {
+              "text": "",
+              "language": "en"
+            }
+          ]
+        },
+        "descriptionText": {
+          "translation": [
+            {
+              "text": "<div data-effect=\"STOP_MOVED\"></div>\n<p>Starting on Wednesday, March 25, and continuing daily between 9 a.m. and 3 p.m. until Wednesday, April 1, there will be various lane closures with two-way traffic set up on 16 Avenue N.W. between 43 Street N.W. and 44 Street N.W. to accommodate water service repair work. Route 40 will be affected.\n<p>The following stop will be temporarily closed:\n<ul>\n  <li>SB 16 AV NW @ 43 ST NW (#6492)\n</ul>\n<p>Please use the following temporary stop in lieu of the closed stops:\n<ul>\n  <li>SB 16 AV NW @ Monterey AV NW (30m north of the pedestrian crossing)\n</ul>",
+              "language": "en"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "188013",
+      "alert": {
+        "activePeriod": [
+          {
+            "start": "1773673200",
+            "end": "1775163600"
+          }
+        ],
+        "informedEntity": [
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "104",
+            "stopId": "8049"
+          }
+        ],
+        "headerText": {
+          "translation": [
+            {
+              "text": "",
+              "language": "en"
+            }
+          ]
+        },
+        "descriptionText": {
+          "translation": [
+            {
+              "text": "<div data-effect=\"STOP_MOVED\"></div>\n<p>Starting Monday, March 16 at 9 a.m. through Thursday, April 2 at 3 p.m., the eastbound lane of 5 Avenue @ 12 Street N.W. will be closed for construction. Route 104 will be affected.</p>\n<p>The following stop will be temporarily closed:</p>\n<ul>\n  <li>WB  5 AV NW @ 12 ST NW (#8049)</li>\n</ul>\n<p>Please use the following stop:</p>\n\n<ul>\n  <li>WB 5 AV NW @ 11 ST NW (#8048) </li>\n</ul>",
+              "language": "en"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "185743",
+      "alert": {
+        "activePeriod": [
+          {
+            "start": "1770642000",
+            "end": "1794758400"
+          }
+        ],
+        "informedEntity": [
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "101",
+            "stopId": "5610"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "101",
+            "stopId": "2903"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "101",
+            "stopId": "7251"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "101",
+            "stopId": "5056"
+          }
+        ],
+        "headerText": {
+          "translation": [
+            {
+              "text": "",
+              "language": "en"
+            }
+          ]
+        },
+        "descriptionText": {
+          "translation": [
+            {
+              "text": "<div data-effect=\"DETOUR\"></div>\n<p>Starting Monday, February 9 at 9 a.m. through Sunday, November 15 at 9 a.m., 6 Street S.E. @ 9 Avenue S.E. will be closed for 6 Street S.E. underpass construction. Route 101 will be detoured.</p>\n<p>Westbound route 101 will travel:</p>\n<ul>\n  <li>From West on 9 Avenue S.E.</li>\n  <li>North on 4 Street S.E.</li>\n  <li>West on 6 Avenue S.E., to regular route</li>\n</ul>\n<p>Eastbound route 101 will travel:</p>\n<ul>\n  <li>From East on 6 Avenue S.E.</li>\n  <li>South on 4 Street S.E.</li>\n  <li>East on 9 Avenue S.E., to regular route</li>\n</ul>\n<p>The following stops will be temporarily closed:</p>\n<ul>\n  <li>NB 6 ST S.E. @ 8 AV S.E. (#7251)</li>\n  <li>WB 6 AV S.E. @ 5 ST S.E. (#5610)</li>\n  <li>EB 6 AV S.E. @ 5 ST S.E. (#2903)</li>\n  <li>SB 6 ST S.E. @ 8 AV S.E. (#5056)</li>\n</ul>\n<p>Please use the following stops in lieu of the closed stops:</p>\n<ul>\n  <li>WB 9 AV S.E. @ 5 ST S.E. - detour stop</li>\n  <li>WB 6 AV S.E. @ 4 ST S.E. (#5112)</li>\n  <li>EB 6 AV S.E. @ 3 ST S.E. (#2902)</li>\n  <li>EB 9 AV S.E. @ Olympic WY S.E. - detour stop</li>\n</ul>",
+              "language": "en"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "188422",
+      "alert": {
+        "activePeriod": [
+          {
+            "start": "1774263600",
+            "end": "1777615140"
+          }
+        ],
+        "informedEntity": [
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "49",
+            "stopId": "6761"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "87",
+            "stopId": "6761"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "135",
+            "stopId": "6761"
+          }
+        ],
+        "headerText": {
+          "translation": [
+            {
+              "text": "",
+              "language": "en"
+            }
+          ]
+        },
+        "descriptionText": {
+          "translation": [
+            {
+              "text": "<div data-effect=\"STOP_MOVED\"></div>\n<p>Starting Monday, March 23 through Thursday, April 30, closures will be in effect on 36 Street between Memorial Drive - Radcliffe Drive S.E. Routes 42, 49, 87 and 135 are affected.</p>\n<p>The following stop will be temporarily closed:</p>\n<ul>\n  <li>SB 36 ST E @ Memorial DR (#6761) - Routes 43, 49, 87 and 135</li>\n</ul>\n<p>Please use the following stop in lieu of the closed stop:</p>\n<ul>\n  <li>SB 36 ST SE @ Radcliffe DR (#6184) - Routes 43, 49, 87 and 135</li>\n</ul>",
+              "language": "en"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "172195",
+      "alert": {
+        "activePeriod": [
+          {
+            "start": "1767272400",
+            "end": "1798754400"
+          }
+        ],
+        "informedEntity": [
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "5",
+            "stopId": "5941"
+          }
+        ],
+        "headerText": {
+          "translation": [
+            {
+              "text": "",
+              "language": "en"
+            }
+          ]
+        },
+        "descriptionText": {
+          "translation": [
+            {
+              "text": "<div data-effect=\"STOP_MOVED\"></div>\n<p>Starting Sunday, June 1 through Thursday, December 31, 2026, the right lane of northbound Edmonton Trail N.E. @ 1 Street N.E. will be closed for construction. Route 5 will have stop closures.</p>\n<p>Daily closures will occur between 9 a.m. and 3 p.m..</p>\n<p>The following stops will be temporarily closed:</p>\n<ul>\n  <li>NB Edmonton TR @ 1 AV NE (#5941) </li>\n</ul>\n<p>Please use the following stops in lieu of the closed stops:</p>\n<ul>\n  <li>NB Edmonton TR @ 1 AV NE (#5941) - 71m north of closed stop</li>\n</ul>",
+              "language": "en"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "184278",
+      "alert": {
+        "activePeriod": [
+          {
+            "start": "1767790800",
+            "end": "1782010800"
+          }
+        ],
+        "informedEntity": [
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "90",
+            "stopId": "5833"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "24",
+            "stopId": "5833"
+          }
+        ],
+        "headerText": {
+          "translation": [
+            {
+              "text": "",
+              "language": "en"
+            }
+          ]
+        },
+        "descriptionText": {
+          "translation": [
+            {
+              "text": "<div data-effect=\"STOP_MOVED\"></div>\n<p>Starting Wednesday, January 7 at 9 a.m. through  Friday, June 26 at 5 p.m., northbound 1 Street S.W. will be closed between 6 - 7 Avenue S.W. to accommodate utility work. Routes 24 &amp; 90 will have a stop closure.</p>\n\n<p>The following stop will be temporarily closed:</p>\n<ul>\n  <li>NB 1 ST SW @ 8 AV SW (far side) (#5833)\n</ul>\n<p>Please use the following stop in lieu of the closed stop:</p>\n<ul>\n  <li>NB 1 ST SW @ 6 AV SW (#5300)\n</ul>",
+              "language": "en"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "177805",
+      "alert": {
+        "activePeriod": [
+          {
+            "start": "1767286800",
+            "end": "1775195940"
+          }
+        ],
+        "informedEntity": [
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "65"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "75"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "3"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "2"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "12"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "14"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "42"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "8"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "9"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "17"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "20"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "4"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "43"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "38"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "49"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "56"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "58"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "23"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "301"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "303"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "113"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "304"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "89"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "153"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "128"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "102"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "145"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "167"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "123"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "306"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "421"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "86"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "302"
+          }
+        ],
+        "headerText": {
+          "translation": [
+            {
+              "text": "",
+              "language": "en"
+            }
+          ]
+        },
+        "descriptionText": {
+          "translation": [
+            {
+              "text": "<p>Some trips may have been removed from this route's daily trips. Please use the trip planner on calgarytransit.com to double-check your schedule before you head out to catch your bus.</p>",
+              "language": "en"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "186365",
+      "alert": {
+        "activePeriod": [
+          {
+            "start": "1771419600",
+            "end": "1775195940"
+          }
+        ],
+        "informedEntity": [
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "108"
+          }
+        ],
+        "headerText": {
+          "translation": [
+            {
+              "text": "",
+              "language": "en"
+            }
+          ]
+        },
+        "descriptionText": {
+          "translation": [
+            {
+              "text": "<div data-effect=\"DETOUR\"></div>\n<p>Effective immediately and continuing until further notice, due to a road closure on westbound 16 Avenue N.W. onto Sarcee Trail N.W., Route 108 will be detoured.</p>\n<p>Westbound route 108 will travel:</p>\n<ul>\n  <li>From West on 16 Avenue N.W.</li>\n  <li>Taking 29 Avenue N.W.</li>\n  <li>North on 69 Street N.W.</li>\n  <li>West on 34 Avenue N.W.</li>\n  <li>South on Sarcee Trail N.W., to regular route</li>\n</ul>\n<p>No stops missed.</p>",
+              "language": "en"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "184280",
+      "alert": {
+        "activePeriod": [
+          {
+            "start": "1767790800",
+            "end": "1782514800"
+          }
+        ],
+        "informedEntity": [
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "1",
+            "stopId": "3392"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "90",
+            "stopId": "2491"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "13",
+            "stopId": "2491"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "7",
+            "stopId": "2491"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "10",
+            "stopId": "7845"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "15",
+            "stopId": "3392"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "307",
+            "stopId": "3392"
+          }
+        ],
+        "headerText": {
+          "translation": [
+            {
+              "text": "",
+              "language": "en"
+            }
+          ]
+        },
+        "descriptionText": {
+          "translation": [
+            {
+              "text": "<div data-effect=\"STOP_MOVED\"></div>\n<p>Starting Wednesday, January 7 at 9 a.m. through  Friday, June 26 at   5 p.m., northbound 1 Street S.W. will be closed between 6 - 7 Avenue S.W. to accommodate utility work. Routes 1, 7, 10, 13, 15, 90 and MAX Purple will have a stop closure.</p>\n\n<p>The following stop will be temporarily closed:</p>\n<ul>\n  <li>\tSB 1 ST @ 6 AV SW (Stop: #7845) Route: 10\n<li>\tSB 1 ST @ 6 AV SW (Stop: #2491) Routes: 7, 13 & 90\n<li>\tSB 1 ST SW @ 7 AV SW (Stop: #3392) Routes: 1, 15 & MAX Purple\n\n</ul>\n<p>Please use the following stop in lieu of the closed stop:</p>\n<ul>\n  <li>\tSB 1 ST SW @ 8 AV SW (#7337) - Routes: 13 & 90\n<li>\tSB 1 ST SW @ 8 AV SW (#5580) \n<ul><li>\tRegular stop - Route 10\n<li>\tTemporary Stop: Routes: 1, 7, 15 & MAX Purple\n\t</ul>\n</ul>",
+              "language": "en"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "184279",
+      "alert": {
+        "activePeriod": [
+          {
+            "start": "1767790800",
+            "end": "1782010800"
+          }
+        ],
+        "informedEntity": [
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "6",
+            "stopId": "5303"
+          },
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "101",
+            "stopId": "5303"
+          }
+        ],
+        "headerText": {
+          "translation": [
+            {
+              "text": "",
+              "language": "en"
+            }
+          ]
+        },
+        "descriptionText": {
+          "translation": [
+            {
+              "text": "<div data-effect=\"STOP_MOVED\"></div>\n<p>Starting Wednesday, January 7 at 9 a.m. through  Friday, June 26 at 5 p.m., northbound 1 Street S.W. will be closed between 6 - 7 Avenue S.W. to accommodate utility work. Routes 6 &amp; 101 will have a stop closure.</p>\n\n<p>The following stop will be temporarily closed:</p>\n<ul>\n  <li>NB 1 ST SW @ 7 AV SW (#5303) - Routes: 6 & 101\n</ul>\n<p>Please use the following stop in lieu of the closed stop:</p>\n<ul>\n<li>NB 1 ST SW @ 6 AV SW (#5300) - Route 101\n<li>WB 6 AV SW @ 2 ST SW (#5118) - Route: 6\n</ul>",
+              "language": "en"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "189033",
+      "alert": {
+        "activePeriod": [
+          {
+            "start": "1774958400",
+            "end": "1798786740"
+          }
+        ],
+        "informedEntity": [
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "40",
+            "stopId": "6796"
+          }
+        ],
+        "headerText": {
+          "translation": [
+            {
+              "text": "",
+              "language": "en"
+            }
+          ]
+        },
+        "descriptionText": {
+          "translation": [
+            {
+              "text": "<div data-effect=\"STOP_MOVED\"></div>\n<p>Starting Monday, February 23 through Thursday, December 31, route 40 will have a stop closure.</p>\n<p>The following stop will be temporarily closed:</p>\n<ul>\n  <li>SB 16 AV N.W. @ Monterey AV (#6796)</li>\n</ul>\n<p>Please use the following stop in lieu of the closed stop:</p>\n<ul>\n  <li>Temporary stop 1 block west of closed stop</li>\n</ul>",
+              "language": "en"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "189045",
+      "alert": {
+        "activePeriod": [
+          {
+            "start": "1775044800",
+            "end": "1775163600"
+          }
+        ],
+        "informedEntity": [
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "56",
+            "stopId": "4232"
+          }
+        ],
+        "headerText": {
+          "translation": [
+            {
+              "text": "",
+              "language": "en"
+            }
+          ]
+        },
+        "descriptionText": {
+          "translation": [
+            {
+              "text": "<div data-effect=\"STOP_MOVED\"></div>\n<p>Starting Wednesday, April 1 through Thursday, April 2, from 9 a.m. to 3 p.m. daily, there will be a right lane closure on westbound 90 Avenue S.W. @ 16 Street S.W. for utility work. Route 56 will have a stop closure.</p>\n<p>The following stop will be temporarily closed:</p>\n<ul>\n  <li>WB 90 AV S.W. @ 16 ST S.W.\u00a0(#4232)</li>\n</ul>\n<p>Please use the following stop in lieu of the closed stop:</p>\n<ul>\n  <li>Temporary stop: 50m west of closed stop</li>\n</ul>",
+              "language": "en"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "189042",
+      "alert": {
+        "activePeriod": [
+          {
+            "start": "1775044800",
+            "end": "1775250000"
+          }
+        ],
+        "informedEntity": [
+          {
+            "agencyId": "Calgary Transit",
+            "routeId": "24",
+            "stopId": "4541"
+          }
+        ],
+        "headerText": {
+          "translation": [
+            {
+              "text": "",
+              "language": "en"
+            }
+          ]
+        },
+        "descriptionText": {
+          "translation": [
+            {
+              "text": "<div data-effect=\"STOP_MOVED\"></div>\n<p>Starting Wednesday, April 1 through Friday, April 3, from 9 a.m. to 3 p.m. daily, there will be right lane closures both ways on Ogden Road S.E. over Blackfoot Trail S.E. for signals work. Route 24 will have a stop closure.</p>\n<p>The following stop will be temporarily closed:</p>\n<ul>\n  <li>EB 26 AV S.E. @ Portland ST (#4541)</li>\n</ul>\n<p>Please use the following stop in lieu of the closed stop:</p>\n<ul>\n  <li>EB 26 AV S.E. @ Portland ST - 30m west of the closed stop</li>\n</ul>",
+              "language": "en"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
