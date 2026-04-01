@@ -62,6 +62,14 @@ def protobuf_to_volume(data_id, volume_path):
     feed_dict = get_feed_protobuf(data_id)
     if feed_dict is None:
         return
+    if "header" not in feed_dict or "timestamp" not in feed_dict.get("header", {}):
+        logger.warning(
+            "Parsed protobuf for %s is missing header/timestamp. Keys: %s, content: %s",
+            data_id,
+            list(feed_dict.keys()),
+            json.dumps(feed_dict)[:500],
+        )
+        return
     ts_suffix = feed_dict["header"]["timestamp"]
     fs_path = f"{volume_path}/{data_id}/{ts_suffix}.json"
     W.files.upload(fs_path, BytesIO(json.dumps(feed_dict).encode("utf-8")))
