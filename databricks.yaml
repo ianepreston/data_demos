@@ -2,6 +2,8 @@
 ---
 bundle:
   name: data_demos
+experimental:
+  skip_name_prefix_for_schema: true
 include:
   - resources/*.yaml
   - resources/*.yml
