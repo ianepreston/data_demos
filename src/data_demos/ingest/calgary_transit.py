@@ -7,10 +7,14 @@ https://data.calgary.ca/Transportation-Transit/Calgary-Transit-Realtime-Trip-Upd
 
 from io import BytesIO
 import json
+import logging
 import requests
 from databricks.sdk import WorkspaceClient
 from google.transit import gtfs_realtime_pb2
 from google.protobuf.json_format import MessageToDict
+from google.protobuf.message import DecodeError
+
+logger = logging.getLogger(__name__)
 
 VEHICLE_POSITIONS_ID: str = "am7c-qe3u"
 SERVICE_ALERTS_ID: str = "jhgn-ynqj"
@@ -38,13 +42,26 @@ def get_feed_protobuf(data_id: str):
     feed = gtfs_realtime_pb2.FeedMessage()
     response = requests.get(url)
     response.raise_for_status()
-    feed.ParseFromString(response.content)
+    try:
+        feed.ParseFromString(response.content)
+    except DecodeError:
+        logger.warning(
+            "Failed to parse protobuf for %s: status=%s, content-type=%s, len=%d, body=%s",
+            data_id,
+            response.status_code,
+            response.headers.get("content-type"),
+            len(response.content),
+            response.content[:500],
+        )
+        return None
     feed_dict = MessageToDict(feed)
     return feed_dict
 
 
 def protobuf_to_volume(data_id, volume_path):
     feed_dict = get_feed_protobuf(data_id)
+    if feed_dict is None:
+        return
     ts_suffix = feed_dict["header"]["timestamp"]
     fs_path = f"{volume_path}/{data_id}/{ts_suffix}.json"
     W.files.upload(fs_path, BytesIO(json.dumps(feed_dict).encode("utf-8")))
