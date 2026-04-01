@@ -38,6 +38,7 @@ def get_feed_protobuf(data_id: str):
     feed = gtfs_realtime_pb2.FeedMessage()
     response = requests.get(url)
     response.raise_for_status()
+    feed.ParseFromString(response.content)
     feed_dict = MessageToDict(feed)
     return feed_dict
 
