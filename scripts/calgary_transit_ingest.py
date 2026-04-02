@@ -9,7 +9,7 @@ dump some json into a volume so I can demo downstream capabilities.
 import time
 from data_demos.ingest import calgary_transit
 
-VOLUME_PATH = "/Volumes/ian_preston/calgary_transit/ingest"
+VOLUME_PATH = "/Volumes/ian_preston/ingest/calgary_transit"
 
 while True:
     for data_id in (

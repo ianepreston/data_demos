@@ -5,8 +5,8 @@ bundle:
 experimental:
   skip_name_prefix_for_schema: true
 include:
-  - resources/*.yaml
-  - resources/*.yml
+  - resources/stable/*.yaml
+  - resources/calgary_transit/*.yaml
 variables:
   catalog_name:
     default: ian_preston
