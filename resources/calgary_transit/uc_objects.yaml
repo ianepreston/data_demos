@@ -1,0 +1,8 @@
+---
+# yaml-language-server: $schema=../../bundle-schema.json
+resources:
+  schemas:
+    calgary_transit_schema:
+      catalog_name: ${resources.catalogs.base.name}
+      name: calgary_transit
+      comment: "Pipelines for Calgary Transit Data"
