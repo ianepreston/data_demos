@@ -10,11 +10,18 @@ include:
 variables:
   catalog_name:
     default: ian_preston
+artifacts:
+  default:
+    type: whl
+    build: uv build
+    dynamic_version: true
+    path: .
 targets:
   fe-east:
     default: true
     mode: development
     workspace:
       profile: field-eng-east
+      artifact_path: "/Volumes/${var.catalog_name}/artifacts/artifacts/"
     variables:
       catalog_name: ian_preston
