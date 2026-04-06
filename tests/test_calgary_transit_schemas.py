@@ -7,9 +7,9 @@ from pyspark.sql import SparkSession
 from pyspark.sql.types import StructType
 
 from data_demos.process.calgary_transit_schemas import (
-    BRONZE_SERVICE_ALERT_SCHEMA,
-    BRONZE_TRIP_UPDATE_SCHEMA,
-    BRONZE_VEHICLE_POSITION_SCHEMA,
+    BRONZE_SERVICE_ALERTS_SCHEMA,
+    BRONZE_TRIP_UPDATES_SCHEMA,
+    BRONZE_VEHICLE_POSITIONS_SCHEMA,
 )
 
 SAMPLE_DATA_DIR = (
@@ -17,9 +17,9 @@ SAMPLE_DATA_DIR = (
 )
 
 SCHEMA_FILE_PAIRS = [
-    (BRONZE_VEHICLE_POSITION_SCHEMA, "vehicle_positions.json"),
-    (BRONZE_SERVICE_ALERT_SCHEMA, "service_alerts.json"),
-    (BRONZE_TRIP_UPDATE_SCHEMA, "trip_updates.json"),
+    (BRONZE_VEHICLE_POSITIONS_SCHEMA, "vehicle_positions.json"),
+    (BRONZE_SERVICE_ALERTS_SCHEMA, "service_alerts.json"),
+    (BRONZE_TRIP_UPDATES_SCHEMA, "trip_updates.json"),
 ]
 
 
