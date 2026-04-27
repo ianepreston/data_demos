@@ -11,6 +11,7 @@ from pyspark.sql.types import (
     ArrayType,
     DoubleType,
     LongType,
+    TimestampType,
 )
 
 
@@ -205,6 +206,9 @@ _BRONZE_TRIP_UPDATE_ENTITY_SCHEMA = StructType(
 BRONZE_VEHICLE_POSITIONS_SCHEMA = _build_schema_with_header(
     _BRONZE_VEHICLE_POSITION_ENTITY_SCHEMA
 )
+BRONZE_VEHICLE_POSITIONS_SCD2_SCHEMA = BRONZE_VEHICLE_POSITIONS_SCHEMA.add(
+    StructField("__START_AT", TimestampType(), True)
+).add(StructField("__END_AT", TimestampType(), True))
 
 BRONZE_SERVICE_ALERTS_SCHEMA = _build_schema_with_header(
     _BRONZE_SERVICE_ALERT_ENTITY_SCHEMA

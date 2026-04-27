@@ -6,3 +6,8 @@ resources:
       catalog_name: ${resources.catalogs.base.name}
       name: calgary_transit
       comment: "Pipelines for Calgary Transit Data"
+  volumes:
+    calgary_transit_checkpoints_volume:
+      catalog_name: ${resources.catalogs.base.name}
+      schema_name: ${resources.schemas.calgary_transit_schema.name}
+      name: checkpoints
