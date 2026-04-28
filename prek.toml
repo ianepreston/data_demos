@@ -9,22 +9,22 @@ hooks = [
   ] },
 ]
 
-# [[repos]]
-# repo = "local"
-#
-# [[repos.hooks]]
-# id = "ruff"
-# name = "ruff check (local)"
-# language = "system"
-# entry = "ruff check --force-exclude"
-# types_or = ["python", "pyi", "jupyter", "pyproject"]
-# require_serial = true
-#
-# # Optional: Ruff formatter (if you also use ruff for formatting)
-# [[repos.hooks]]
-# id = "ruff-format"
-# name = "ruff format (local)"
-# language = "system"
-# entry = "ruff format --force-exclude"
-# types_or = ["python", "pyi", "jupyter"]
-# require_serial = true
+[[repos]]
+repo = "local"
+
+[[repos.hooks]]
+id = "ruff"
+name = "ruff check (local)"
+language = "system"
+entry = "ruff check --force-exclude"
+types_or = ["python", "pyi", "jupyter", "pyproject"]
+require_serial = true
+
+# Optional: Ruff formatter (if you also use ruff for formatting)
+[[repos.hooks]]
+id = "ruff-format"
+name = "ruff format (local)"
+language = "system"
+entry = "ruff format --force-exclude"
+types_or = ["python", "pyi", "jupyter"]
+require_serial = true
