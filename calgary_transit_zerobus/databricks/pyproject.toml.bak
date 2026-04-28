@@ -13,9 +13,6 @@ dependencies = ["gtfs-realtime-bindings>=2.0.0", "requests>=2.32.5"]
 requires = ["uv_build>=0.10.4,<0.11.0"]
 build-backend = "uv_build"
 
-[[tool.uv.index]]
-url = "https://pypi-proxy.dev.databricks.com/simple"
-default = true
 
 [dependency-groups]
 dev = [

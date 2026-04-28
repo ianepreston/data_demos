@@ -5,21 +5,20 @@ https://data.calgary.ca/Transportation-Transit/Calgary-Transit-Realtime-Service-
 https://data.calgary.ca/Transportation-Transit/Calgary-Transit-Realtime-Trip-Updates-GTFS-RT/gs4m-mdc2/about_data
 """
 
-from io import BytesIO
 import json
 import logging
 import requests
-from databricks.sdk import WorkspaceClient
 from google.transit import gtfs_realtime_pb2
 from google.protobuf.json_format import MessageToDict
 from google.protobuf.message import DecodeError
+from zerobus.sdk.sync import ZerobusSdk
+from zerobus.sdk.shared import RecordType, StreamConfigurationOptions, TableProperties
 
 logger = logging.getLogger(__name__)
 
 VEHICLE_POSITIONS_ID: str = "am7c-qe3u"
 SERVICE_ALERTS_ID: str = "jhgn-ynqj"
 TRIP_UPDATES_ID: str = "gs4m-mdc2"
-W = WorkspaceClient()
 
 
 def get_blob_id(data_id: str) -> str:
@@ -55,10 +54,32 @@ def get_feed_protobuf(data_id: str):
         )
         return None
     feed_dict = MessageToDict(feed)
+    feed_dict["blob_id"] = blob_id
     return feed_dict
 
 
-def protobuf_to_volume(data_id, volume_path):
+def protobuf_to_zerobus(
+    data_id: str,
+    server_endpoint: str,
+    workspace_url: str,
+    full_table_name: str,
+    client_id: str,
+    client_secret: str,
+) -> None:
+    """Write calgary transit data to a delta table using zerobus
+
+    Args:
+        data_id: The identifier of the series. See constants at the top of this module
+        server_endpoint: https://learn.microsoft.com/en-us/azure/databricks/ingestion/zerobus-ingest#get-your-workspace-url-and-zerobus-ingest-endpoint
+        workspace_url: URL of your target databricks workspace
+        full_table_name: catalog.schema.table format
+        client_id: ID of the service principal for the operation
+        client_secret: secret of the service principal for the operation
+    """
+    sdk = ZerobusSdk(server_endpoint, workspace_url)
+    table_properties = TableProperties(full_table_name)
+    options = StreamConfigurationOptions(record_type=RecordType.JSON)
+    stream = sdk.create_stream(client_id, client_secret, table_properties, options)
     feed_dict = get_feed_protobuf(data_id)
     if feed_dict is None:
         return
@@ -70,6 +91,11 @@ def protobuf_to_volume(data_id, volume_path):
             json.dumps(feed_dict)[:500],
         )
         return
-    ts_suffix = feed_dict["header"]["timestamp"]
-    fs_path = f"{volume_path}/{data_id}/{ts_suffix}.json"
-    W.files.upload(fs_path, BytesIO(json.dumps(feed_dict).encode("utf-8")))
+    update_ts = feed_dict["header"]["timestamp"]
+    blob_id = feed_dict["blob_id"]
+    record = {"update_ts": update_ts, "blob_id": blob_id, "payload": feed_dict}
+    try:
+        offset = stream.ingest_record_offset(record)
+        stream.wait_for_offset(offset)
+    finally:
+        stream.close()
