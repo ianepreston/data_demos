@@ -1,0 +1,4 @@
+sp_credentials.env
+.terraform
+.terraform.lock.hcl
+terraform.tfstate*
