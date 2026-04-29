@@ -1,18 +1,5 @@
 [tool.uv.workspace]
-members = ["src/*"]
-
-[tool.uv]
-package = false
-
-[project]
-name = "calgary-transit-zerobus"
-version = "0.1.0"
-description = "Container workspace for things related to ingesting Calgary Transit data with zerobus"
-readme = "README.md"
-authors = [
-  { name = "ianepreston", email = "17241371+ianepreston@users.noreply.github.com" },
-]
-requires-python = ">=3.13"
+members = ["src/zerobus_app"]
 
 [dependency-groups]
 dev = [
