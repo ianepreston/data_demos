@@ -32,6 +32,10 @@ resource "databricks_sql_table" "calgary_transit_ingest" {
     type = "timestamp"
   }
   column {
+    name = "data_id"
+    type = "string"
+  }
+  column {
     name = "blob_id"
     type = "string"
   }

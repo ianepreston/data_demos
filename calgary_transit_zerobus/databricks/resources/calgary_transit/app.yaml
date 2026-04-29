@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../bundle-schema.json
+---
+resources:
+  apps:
+    zerobus_ingest_app:
+      name: 'zerobus-ingestion-app'
+      source_code_path: ../../src/zerobus_app
+      resources:
+        - name: zerobus_client_id
+          secret:
+            scope: zerobus-app
+            key: client-id
+            permission: READ
+        - name: zerobus_client_secret
+          secret:
+            scope: zerobus-app
+            key: client-secret
+            permission: READ
+      config:
+        command: ['python', 'calgary_transit.py']
+        env:
+          - name: ZEROBUS_CLIENT_ID
+            value_from: zerobus_client_id
+          - name: ZEROBUS_CLIENT_SECRET
+            value_from: zerobus_client_secret
+          - name: SERVER_ENDPOINT
+            value: ${var.zerobus_url}
+          - name: DATABRICKS_WORKSPACE_URL
+            value: ${var.workspace_url}

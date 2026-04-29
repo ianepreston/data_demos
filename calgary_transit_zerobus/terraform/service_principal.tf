@@ -9,8 +9,8 @@ resource "databricks_service_principal_secret" "ct_zb_sp_secret" {
 resource "local_sensitive_file" "sp_credentials" {
   filename        = "${path.module}/sp_credentials.env"
   content         = <<-EOT
-    DATABRICKS_CLIENT_ID=${databricks_service_principal.ct_zb_sp.application_id}
-    DATABRICKS_CLIENT_SECRET=${databricks_service_principal_secret.ct_zb_sp_secret.secret}
+    ZEROBUS_CLIENT_ID=${databricks_service_principal.ct_zb_sp.application_id}
+    ZEROBUS_CLIENT_SECRET=${databricks_service_principal_secret.ct_zb_sp_secret.secret}
   EOT
   file_permission = "0600"
 }
@@ -38,4 +38,20 @@ resource "databricks_grant" "ct_zb_sp_table" {
     "MODIFY",
     "SELECT"
   ]
+}
+
+resource "databricks_secret_scope" "zerobus-app" {
+  name = "zerobus-app"
+}
+
+resource "databricks_secret" "client-id" {
+  key          = "client-id"
+  string_value = databricks_service_principal.ct_zb_sp.application_id
+  scope        = databricks_secret_scope.zerobus-app.id
+}
+
+resource "databricks_secret" "client-secret" {
+  key          = "client-secret"
+  string_value = databricks_service_principal_secret.ct_zb_sp_secret.secret
+  scope        = databricks_secret_scope.zerobus-app.id
 }

@@ -1,27 +1,30 @@
 # yaml-language-server: $schema=./bundle-schema.json
 ---
 bundle:
-  name: data_demos
+  name: calgary_transit
 experimental:
   skip_name_prefix_for_schema: true
+  scripts:
+    prebuild: uv export --package zerobus_app --no-dev --no-emit-workspace --no-hashes -o src/zerobus_app/requirements.txt
 include:
   - resources/stable/*.yaml
   - resources/calgary_transit/*.yaml
+sync:
+  include:
+    - src/zerobus_app/requirements.txt
 variables:
   catalog_name:
-    default: ian_preston
-artifacts:
-  default:
-    type: whl
-    build: uv build
-    dynamic_version: true
-    path: .
+    default: classic_stable_ptbvhz_ip
+  workspace_url:
+    description: URL of the target workspace, needed for zerobus
+  zerobus_url:
+    description: URL for the zerobus connection
 targets:
-  fe-east:
+  default:
     default: true
     mode: development
     workspace:
-      profile: field-eng-east
-      artifact_path: "/Volumes/${var.catalog_name}/artifacts/artifacts/"
+      profile: fevm-az
     variables:
-      catalog_name: ian_preston
+      workspace_url: "https://adb-7405616154229592.12.azuredatabricks.net/"
+      zerobus_url: "https://7405616154229592.zerobus.westus2.azuredatabricks.net"
