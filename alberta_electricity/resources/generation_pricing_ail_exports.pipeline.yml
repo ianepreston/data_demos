@@ -1,0 +1,22 @@
+resources:
+  pipelines:
+    generation_pricing_ail_exports:
+      name: generation_pricing_ail_exports
+
+      catalog: ${var.catalog_name}
+      schema: ${var.schema_name}
+
+      libraries:
+        - notebook:
+            path: ../pipelines/generation_pricing_ail_exports.ipynb
+
+      serverless: true
+      continuous: false
+      development: true
+      photon: true
+      channel: current
+
+      configuration:
+        source_catalog: ${var.catalog_name}
+        source_schema: ${var.schema_name}
+        source_volume: ${var.volume_name}
