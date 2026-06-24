@@ -9,6 +9,10 @@ include:
 variables:
   catalog_name:
     description: "The catalog to work in"
+  schema_name:
+    description: "The schema to work in"
+  volume_name:
+    description: "The volume for raw data ingestion"
 targets:
   default:
     default: true
@@ -17,3 +21,5 @@ targets:
       profile: fevm-az
     variables:
       catalog_name: classic_stable_ptbvhz_ip
+      schema_name: alberta_energy
+      volume_name: aeso_ingest
