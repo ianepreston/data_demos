@@ -5,7 +5,7 @@ bundle:
 experimental:
   skip_name_prefix_for_schema: true
 include:
-  - resources/*.yaml
+  - resources/*.yml
 variables:
   catalog_name:
     description: "The catalog to work in"
