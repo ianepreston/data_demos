@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=./bundle-schema.json
+---
+bundle:
+  name: alberta_enegery
+experimental:
+  skip_name_prefix_for_schema: true
+include:
+  - resources/*.yaml
+variables:
+  catalog_name:
+    description: "The catalog to work in"
+targets:
+  default:
+    default: true
+    mode: development
+    workspace:
+      profile: fevm-az
+    variables:
+      catalog_name: classic_stable_ptbvhz_ip

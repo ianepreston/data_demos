@@ -1,0 +1,12 @@
+---
+resources:
+  schemas:
+    alberta_energy:
+      catalog_name: ${var.catalog_name}
+      comment: "Managed by DAB, resources to analyze electricity in Alberta"
+      name: alberta_energy
+  volumes:
+    aeso_ingest:
+      catalog_name: ${var.catalog_name}
+      schema_name: ${resources.schemas.alberta_energy.name}
+      name: aeso_ingest
