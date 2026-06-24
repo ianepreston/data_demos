@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=./bundle-schema.json
 ---
 bundle:
-  name: alberta_enegery
+  name: alberta_energy
 experimental:
   skip_name_prefix_for_schema: true
 include:
