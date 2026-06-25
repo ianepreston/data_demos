@@ -1,0 +1,15 @@
+[tool.ruff]
+# Names injected by the Databricks runtime into notebook globals.
+# Declaring them as builtins stops ruff flagging F821 (undefined name)
+# in code that runs on Databricks but not in a local Spark session.
+builtins = [
+    "spark",
+    "dbutils",
+    "display",
+    "displayHTML",
+    "sc",
+    "sqlContext",
+    "getArgument",
+    "table",
+    "udf",
+]

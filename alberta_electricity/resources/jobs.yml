@@ -1,17 +1,54 @@
 resources:
   jobs:
-      download_historical_metered_volume_and_pool_price:
-        name: download_historical_metered_volume_and_pool_price
-        tasks:
-          - task_key: download_historical_data
-            notebook_task:
-              notebook_path: ../jobs/download_historical_metered_volume_and_pool_price.ipynb
-              base_parameters:
-                catalog_name: ${var.catalog_name}
-                schema_name: ${var.schema_name}
-                volume_name: ${var.volume_name}
-          - task_key: ingest_pool_price_ail
-            depends_on:
-              - task_key: download_historical_data
-            pipeline_task:
-              pipeline_id: ${resources.pipelines.generation_pricing_ail_exports.id}
+    # Daily: seed the historical CSV (idempotent), pull new AESO API data into bronze,
+    # then refresh the SDP pipeline that unifies CSV history + API into the silver tables.
+    aeso_daily_ingest:
+      name: aeso_daily_ingest
+      tasks:
+        - task_key: download_historical_data
+          notebook_task:
+            notebook_path: ../jobs/download_historical_metered_volume_and_pool_price.ipynb
+            base_parameters:
+              catalog_name: ${var.catalog_name}
+              schema_name: ${var.schema_name}
+              volume_name: ${var.volume_name}
+        - task_key: ingest_api_bronze
+          notebook_task:
+            notebook_path: ../jobs/ingest_aeso_api_bronze.ipynb
+            base_parameters:
+              catalog_name: ${var.catalog_name}
+              schema_name: ${var.schema_name}
+              genesis: "2025-08-01"
+        - task_key: ingest_pool_price_ail
+          depends_on:
+            - task_key: download_historical_data
+            - task_key: ingest_api_bronze
+          pipeline_task:
+            pipeline_id: ${resources.pipelines.generation_pricing_ail_exports.id}
+      schedule:
+        quartz_cron_expression: "0 0 8 * * ?"  # 08:00 daily
+        timezone_id: America/Edmonton
+        pause_status: UNPAUSED
+
+    # Monthly: deep re-pull (90-day lookback) so late AESO settlement revisions overwrite
+    # via the bronze MERGE, then refresh the pipeline. The daily job uses a short lookback.
+    aeso_resettlement:
+      name: aeso_resettlement
+      tasks:
+        - task_key: deep_repull_bronze
+          notebook_task:
+            notebook_path: ../jobs/ingest_aeso_api_bronze.ipynb
+            base_parameters:
+              catalog_name: ${var.catalog_name}
+              schema_name: ${var.schema_name}
+              genesis: "2025-08-01"
+              force_lookback_days: "90"
+        - task_key: refresh_pipeline
+          depends_on:
+            - task_key: deep_repull_bronze
+          pipeline_task:
+            pipeline_id: ${resources.pipelines.generation_pricing_ail_exports.id}
+      schedule:
+        quartz_cron_expression: "0 0 9 1 * ?"  # 09:00 on the 1st of each month
+        timezone_id: America/Edmonton
+        pause_status: UNPAUSED
